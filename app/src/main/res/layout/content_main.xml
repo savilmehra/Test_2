@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <RelativeLayout
+        android:id="@+id/lyt_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:text="test 1" />
+
+        <Button
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a"
+            android:text="test2 " />
+
+        <Button
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b"
+            android:text="test3 " />
+
+        <TextView
+            android:id="@+id/abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c"
+            android:layout_margin="50dp"
+            android:text="Test 3" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
